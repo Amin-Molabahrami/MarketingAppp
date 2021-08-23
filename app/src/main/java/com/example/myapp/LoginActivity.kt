@@ -31,7 +31,7 @@ class LoginActivity : AppCompatActivity() {
         val password=binding.passEditText.text.toString()
         if(username.equals(preferences.getString("Username",""))){
             if(password.equals(preferences.getString("Password",""))){
-                val intent= Intent(this,Welcome::class.java)
+                val intent= Intent(this,WelcomeActivity::class.java)
                 startActivity(intent)
             }
             else{

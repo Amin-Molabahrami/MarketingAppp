@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp">
-        <activity android:name=".GoodsActivity" android:parentActivityName=".Welcome"></activity>
-        <activity android:name=".Welcome" />
+        <activity android:name=".GoodsActivity" android:parentActivityName=".WelcomeActivity"></activity>
+        <activity android:name=".WelcomeActivity" />
         <activity
             android:name=".RegisterActivity"
             android:parentActivityName=".MainActivity" />
