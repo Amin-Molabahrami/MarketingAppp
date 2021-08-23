@@ -3,6 +3,7 @@ package com.example.myapp
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myapp.Module.Module
 import com.example.myapp.databinding.ActivityGoodsBinding
 
 class GoodsActivity : AppCompatActivity() {
@@ -25,6 +26,7 @@ class GoodsActivity : AppCompatActivity() {
         }
 
         binding.buttonItem.setOnClickListener {
+            val data = Module(text,image!!)
             Toast.makeText(this,"Added to cart", Toast.LENGTH_LONG).show()
         }
 
