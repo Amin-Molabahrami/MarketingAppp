@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
             val intent= Intent(this,LoginActivity::class.java)
             startActivity(intent)
         }
+        //behnam
         binding.RegisterButton.setOnClickListener {
             val intent= Intent(this,RegisterActivity::class.java)
             startActivity(intent)
