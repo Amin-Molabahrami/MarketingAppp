@@ -23,10 +23,10 @@ class LoginActivity : AppCompatActivity() {
         actionbar?.setDisplayHomeAsUpEnabled(true)
 
         binding.ItemButton.setOnClickListener {
-            OK()
+            CheckLoginInputs()
         }
     }
-    fun OK(){
+    fun CheckLoginInputs(){
         val username=binding.usernameEditText.text.toString()
         val password=binding.passEditText.text.toString()
         if(username.equals(preferences.getString("Username",""))){
